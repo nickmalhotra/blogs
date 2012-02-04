@@ -10,15 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120204053246) do
 
-  create_table "microsposts", :force => true do |t|
-=======
-ActiveRecord::Schema.define(:version => 20120203211450) do
-
   create_table "microposts", :force => true do |t|
->>>>>>> 17085aa1a02fd2a8ec7c137b2f878348ea61bbcd
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "microsposts", :force => true do |t|
     t.string   "content"
     t.integer  "user_id"
     t.datetime "created_at"

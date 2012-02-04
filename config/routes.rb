@@ -1,9 +1,5 @@
 Blogs::Application.routes.draw do
-<<<<<<< HEAD
-  resources :microsposts
-=======
   resources :microposts
->>>>>>> 17085aa1a02fd2a8ec7c137b2f878348ea61bbcd
 
   resources :users
 
